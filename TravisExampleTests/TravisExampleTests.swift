@@ -24,8 +24,9 @@ class TravisExampleTests: XCTestCase {
     func testExample() {
         // This is an example of a functional test case.
         // Use XCTAssert and related functions to verify your tests produce the correct results.
-        let success = (1+1) == 2
-        XCTAssertTrue(success, "1 + 1 = 2")
+
+        let failure = (1+1) == 3
+        XCTAssertTrue(failure, "1 + 1 = 2")
     }
     
     func testPerformanceExample() {
