@@ -14,6 +14,7 @@
 		2B637EE921A457A20075FC0B /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 2B637EE721A457A20075FC0B /* LaunchScreen.storyboard */; };
 		2B637EF421A457A20075FC0B /* TravisExampleTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2B637EF321A457A20075FC0B /* TravisExampleTests.swift */; };
 		2B637EFF21A457A30075FC0B /* TravisExampleUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2B637EFE21A457A30075FC0B /* TravisExampleUITests.swift */; };
+		D0E2B11B2849B616769A4276 /* Pods_TravisExample.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 6424E708EFA0E58C30695713 /* Pods_TravisExample.framework */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -47,6 +48,9 @@
 		2B637EFA21A457A30075FC0B /* TravisExampleUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = TravisExampleUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		2B637EFE21A457A30075FC0B /* TravisExampleUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TravisExampleUITests.swift; sourceTree = "<group>"; };
 		2B637F0021A457A30075FC0B /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		46357B902C72D76834498B1D /* Pods-TravisExample.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-TravisExample.debug.xcconfig"; path = "Pods/Target Support Files/Pods-TravisExample/Pods-TravisExample.debug.xcconfig"; sourceTree = "<group>"; };
+		6424E708EFA0E58C30695713 /* Pods_TravisExample.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_TravisExample.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		CEA07209E6035011F282B184 /* Pods-TravisExample.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-TravisExample.release.xcconfig"; path = "Pods/Target Support Files/Pods-TravisExample/Pods-TravisExample.release.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -54,6 +58,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				D0E2B11B2849B616769A4276 /* Pods_TravisExample.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -81,6 +86,8 @@
 				2B637EF221A457A20075FC0B /* TravisExampleTests */,
 				2B637EFD21A457A30075FC0B /* TravisExampleUITests */,
 				2B637EDC21A457A10075FC0B /* Products */,
+				E57719842F2C4BEDEF8DDE21 /* Pods */,
+				73A0E5D5F8B3AEE5D075C97A /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -125,6 +132,23 @@
 			path = TravisExampleUITests;
 			sourceTree = "<group>";
 		};
+		73A0E5D5F8B3AEE5D075C97A /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				6424E708EFA0E58C30695713 /* Pods_TravisExample.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		E57719842F2C4BEDEF8DDE21 /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				46357B902C72D76834498B1D /* Pods-TravisExample.debug.xcconfig */,
+				CEA07209E6035011F282B184 /* Pods-TravisExample.release.xcconfig */,
+			);
+			name = Pods;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -132,9 +156,11 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 2B637F0321A457A30075FC0B /* Build configuration list for PBXNativeTarget "TravisExample" */;
 			buildPhases = (
+				C1DE0F735D4BD3D37069FBFC /* [CP] Check Pods Manifest.lock */,
 				2B637ED721A457A10075FC0B /* Sources */,
 				2B637ED821A457A10075FC0B /* Frameworks */,
 				2B637ED921A457A10075FC0B /* Resources */,
+				493841A34843DE3F05D14882 /* [CP] Embed Pods Frameworks */,
 			);
 			buildRules = (
 			);
@@ -250,6 +276,45 @@
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		493841A34843DE3F05D14882 /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+				"${SRCROOT}/Pods/Target Support Files/Pods-TravisExample/Pods-TravisExample-frameworks.sh",
+				"${BUILT_PRODUCTS_DIR}/Alamofire/Alamofire.framework",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputPaths = (
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/Alamofire.framework",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-TravisExample/Pods-TravisExample-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		C1DE0F735D4BD3D37069FBFC /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-TravisExample-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
 		2B637ED721A457A10075FC0B /* Sources */ = {
@@ -428,6 +493,7 @@
 		};
 		2B637F0421A457A30075FC0B /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 46357B902C72D76834498B1D /* Pods-TravisExample.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
@@ -446,6 +512,7 @@
 		};
 		2B637F0521A457A30075FC0B /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = CEA07209E6035011F282B184 /* Pods-TravisExample.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
